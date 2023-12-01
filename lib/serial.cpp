@@ -6,9 +6,12 @@ byte numReceived = 0;
 
 boolean newData = false;
 
+void recvBytesWithStartEndMarkers() {}
+void showNewData() {}
+
 void setup()
 {
-    Serial.begin(9600);
+    Serial.begin(115200);
     Serial.println("<Arduino is ready>");
 }
 
@@ -69,6 +72,6 @@ void showNewData()
             Serial.print(' ');
         }
         Serial.println();
-        newData = false;
+        newData = false;void recvBytesWithStartEndMarkers()
     }
 }
